@@ -1,0 +1,163 @@
+:root{
+    --font-color: #b44715;
+}
+
+
+.header-content{
+    background-color: #e6dec7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header_logo{
+    padding-top: 10px;
+}
+
+#header_logo img{    
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+
+.header-nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.header-nav a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+
+.main-conatinar{
+    align-items: center;
+}
+
+#main_impact_section {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+#impact_slogan{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-items: start;
+}
+
+#impact_slogan p {
+    font-size: 14px;
+}
+
+#impact_slogan button {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border-color: var(--font-color);
+    border-radius: 10px;
+    color: var(--font-color);
+    background-color: #ede9e7;
+}
+
+#impact_slogan button:hover{
+    background-color: var(--font-color);
+    color: #ede9e7;
+
+}
+
+#impact-product-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#product{
+    background-color: #e6dec7;
+    width: 50%;
+    
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+#product img{
+    width: 50%;
+    border: #b44715 solid;
+    border-radius: 20px;
+    
+}
+
+#price-avaliation{
+    display: flex;
+    gap: 3px;
+    
+}
+#price-avaliation h6{
+    font-size: 10px;
+}
+
+
+
+#main_aboutus-section{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    gap: 30px;
+    
+
+}
+#main_aboutus-section h1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+}
+#main_aboutus-section h1::after{
+    content: "";
+    width: 100%;
+    border: var(--font-color) solid;
+    background-color: var(--font-color);
+}
+
+#main_aboutus-section p{
+    display: block;
+    width: 60%;
+    font-size: 20px;
+    text-align: start;
+
+}
+
+.msv-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.msv-itens{
+    background-color: #e6dec7;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px 0px 30px 0px;
+    align-content: center;
+    text-align: center;
+    
+
+}
+
+
+
+
+
+
