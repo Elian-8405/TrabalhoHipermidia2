@@ -1,106 +1,76 @@
-/* Layout responsivo para os cards (3 colunas em telas grandes, 1 coluna em telas pequenas) */
-@media (min-width: 768px) {
-    #aboutus {
-      display: flex;
-      justify-content: space-evenly;
-      gap: 20px;
-    }
-  
-    .card_values, .card_mission, .card_vision {
-      flex: 1;
-      max-width: 300px;
-    }
-    .footer-logo h2 {
-      font-size: 1.2rem;
-    }
-  .footer-address {
-      font-size: 0.9rem;
-    }
-  .social-links a {
-      font-size: 1.3rem;
-    }
- 
 
-
-}
-  
-  
+/*Configaracoes para telas menores*/
 @media (max-width: 767px) {
 
+  /*Ajustes header*/
+  .logo_container h2 {
+    display: none;
+  }
 
-.logo_container h2{
-  display: none;
-}
-.logo_container img{
-  width: 5rem;
-  height: auto;
-}
-
-
-.nav_container {
-  align-items: center;
-  padding: 10px;
-  background-color: #FBD1C5; 
-}
+  .logo_container img {
+    width: 5rem;
+    height: auto;
+  }
 
 
+  .nav_container {
+    align-items: center;
+    padding: 10px;
+    background-color: #FBD1C5;
+  }
 
+  /*Ajustes header*/
 
+  /*Ajueste secao de imapcto*/
+  #impact_section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
+  #slogan_container span {
+    font-size: 1.8rem;
+    font-weight: bold;
 
-#impact_section {
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-#slogan_container span{
-  font-size: 1.8rem;
-  font-weight: bold;
+  }
 
-}
-#slogan_container, #impact_product {
+  #slogan_container,
+  #impact_product {
     flex: 1 1 100%;
     margin: 10px 0;
-    
-}
-#slogan_container h1 {
+
+  }
+
+  #slogan_container h1 {
     text-align: center;
     font-size: 1.5rem;
-}
-#slogan_container p {
+  }
+
+  #slogan_container p {
     font-size: 1rem;
     text-align: flex-start;
-}
-#impact_product .product-title, #impact_product .product-description {
+  }
+
+  #impact_product .product-title,
+  #impact_product .product-description {
     font-size: 1rem;
-}
-#impact_product .product-footer {
+  }
+
+  #impact_product .product-footer {
     flex-direction: column;
     align-items: flex-start;
-}
-#impact_product .product-price {
+  }
+
+  #impact_product .product-price {
     font-size: 1.2rem;
     margin-bottom: 10px;
-}
-#impact_product .add-to-cart {
+  }
+
+  #impact_product .add-to-cart {
     width: 100%;
     text-align: center;
-}
+  }
 
-#aboutus {
-  display: block;
-  text-align: center;
-}
-
-.card_values, .card_mission, .card_vision {
-  max-width: none;
-  margin: 10px 0;
-}
-
-
-
+  /*Ajustes header*/
 
 }
-
-
-   

@@ -4,38 +4,42 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #FFF7F0;
     font-family: 'Arial', sans-serif;
     color: #6B4F4F;
     margin-top: 3.8rem;
-    
+
 }
 
-h1, h2{
-    color:#3E6259;
+h1,
+h2 {
+    color: #3E6259;
 }
+
 p {
     color: #6B4F4F;
 }
+
 button {
     background-color: #A5C9CA;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 section {
     background-color: #FFF1E6;
 }
 
+/*Configaracoes header*/
 #header_content {
-    position: fixed; /* Fixa o header no topo */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #FBD1C5; /* Cor do fundo do header */
+    background-color: #FBD1C5;
     padding: 15px 30px;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,17 +52,17 @@ section {
 }
 
 .logo_container img {
-    width: 80px; 
+    width: 80px;
     height: auto;
 }
 
 .logo_container h2 {
-    color: #3E6259; /* Cor do título */
+    color: #3E6259;
     font-size: 1.5rem;
 }
 
 .nav_container {
-    float: right; /* Alinha a navegação à direita */
+    float: right;
 }
 
 .nav_container ul {
@@ -74,18 +78,20 @@ section {
 
 .nav_container a {
     text-decoration: none;
-    color: #3E6259; /* Cor do link */
+    color: #3E6259;
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
 .nav_container a:hover {
-    color: #6B4F4F; /* Cor quando o link é hover */
+    color: #6B4F4F;
 }
 
+/*Configaracoes header*/
 
 
-#impact_section{
+/*Configaracoes secao de impacto*/
+#impact_section {
     display: flex;
     overflow-x: hidden;
     justify-content: space-between;
@@ -98,22 +104,22 @@ section {
     max-width: 700px;
     flex-grow: 1;
     padding: 2rem 0 0 2rem;
-    
-  }
-  
-  #slogan_container h1 {
+
+}
+
+#slogan_container h1 {
     color: #3E6259;
     font-size: 2rem;
     margin-bottom: 15px;
-  }
-  
-  #slogan_container p {
+}
+
+#slogan_container p {
     color: #6B4F4F;
     font-size: 16px;
     line-height: 1.6;
-  }
-  
-  #slogan_container button {
+}
+
+#slogan_container button {
     background-color: #A5C9CA;
     color: #FFFFFF;
     border: none;
@@ -122,13 +128,13 @@ section {
     font-size: 16px;
     cursor: pointer;
     margin-top: 0.8rem;
-  }
-  
-  #slogan_container button:hover {
-    background-color: #8BB8B9;
-  }
+}
 
-/* Estilos gerais do card */
+#slogan_container button:hover {
+    background-color: #8BB8B9;
+}
+
+
 #impact_product {
     background-color: #FFF7F0;
     border-radius: 10px;
@@ -136,46 +142,46 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     margin: 0 auto;
-  }
-  
-  /* Estilo da imagem do produto */
-  .product-image {
+}
+
+
+.product-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
-  }
-  
-  /* Título do produto */
-  .product-title {
+}
+
+
+.product-title {
     color: #3E6259;
     font-size: 24px;
     margin-top: 15px;
-  }
-  
-  /* Descrição do produto */
-  .product-description {
+}
+
+
+.product-description {
     color: #6B4F4F;
     font-size: 16px;
     line-height: 1.6;
-  }
-  
-  /* Rodapé com preço e botão */
-  .product-footer {
+}
+
+
+.product-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-  }
-  
-  /* Preço do produto */
-  .product-price {
+}
+
+
+.product-price {
     color: #3E6259;
     font-size: 20px;
     font-weight: bold;
-  }
-  
-  /* Estilo do botão de adicionar ao carrinho */
-  .add-to-cart {
+}
+
+/* botão de adicionar ao carrinho do produto de impacto*/
+.add-to-cart {
     background-color: #A5C9CA;
     color: #FFFFFF;
     border: none;
@@ -183,70 +189,74 @@ section {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-  }
-  
-  .add-to-cart:hover {
-    background-color: #8BB8B9; /* Cor um pouco mais escura ao passar o mouse */
-  }
+}
 
-  /*section sobre nós*/
-  
-  #aboutus {
+.add-to-cart:hover {
+    background-color: #8BB8B9;
+}
+
+/*Configaracoes secao de impacto*/
+
+/*Configuracoes secao sobre nos*/
+#aboutus {
     display: flex;
     overflow-x: hidden;
     flex-direction: column;
-    background-color: #FFF1E6; /* Leve variação de bege para diferenciação da seção */
+    background-color: #FFF1E6;
     padding: 40px;
     margin-bottom: 0;
     padding-bottom: 0;
     text-align: center;
-  }
+}
 
-  #aboutus h1::before{
+#aboutus h1::before {
     content: "";
     background-color: #3E6259;
     border: 0.2rem solid;
     width: 48%;
     height: 0.2rem;
-    
 
-  }
-  
-  #aboutus h1 {
+
+}
+
+#aboutus h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #3E6259;
     font-size: 2rem;
-   
-  }
 
-  #aboutus h1::after{
+}
+
+#aboutus h1::after {
     content: "";
     border: 0.2rem solid;
     width: 48%;
     height: 0.2rem;
     background-color: #3E6259;
-  }
-  
-  #aboutus p {
+}
+
+#aboutus p {
     color: #6B4F4F;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 2rem;
     text-align: start;
-  }
-  .slide-container {
+}
+
+.slide-container {
     position: relative;
     width: 100%;
-    height: 90%; 
+    height: 90%;
     overflow: hidden;
     margin-top: 20px;
 }
+
 .slides {
     display: flex;
     transition: transform 1s ease;
 }
+
 .slide {
     min-width: 100%;
     height: 100%;
@@ -254,11 +264,13 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 .slide img {
-    width: 100%; /* Adjust the percentage to control the size */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Prevent the image from exceeding the container width */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
+
 .buttons {
     position: absolute;
     top: 50%;
@@ -268,6 +280,7 @@ section {
     padding: 0 20px;
     z-index: 10;
 }
+
 .button {
     background-color: rgba(0, 123, 255, 0.5);
     color: white;
@@ -277,50 +290,27 @@ section {
     cursor: pointer;
     border-radius: 50%;
 }
+
 .button:hover {
     background-color: rgba(0, 123, 255, 0.8);
 }
 
-  /* Container para os cards de valores, missão e visão */
-  .cards_container {
+/* Container para os cards de valores, missão e visão */
+.cards_container {
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
-   
+
 }
 
-/* Estilos para os cards */
+/*Configuracoes secao sobre nos*/
 
 
-
-/* Estilo para os títulos dos cards */
-.cards_container h2 {
-    color: #3E6259; /* Verde menta */
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-/* Estilo para os parágrafos dos cards */
-.cards_container p {
-    color: #6B4F4F; /* Marrom suave */
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* Efeito Hover nos Cards */
-.cards_container .card_values:hover,
-.cards_container .card_mission:hover,
-.cards_container .card_vision:hover {
-    transform: translateY(-10px); /* Animação de levantar o card */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
-}
-
-
-/* Estilos para o container dos produtos */
+/*Configuracoes produtos*/
 #products_container {
     display: flex;
     gap: 2rem;
-    list-style-type: none; /* Remove os marcadores padrão de lista */
+    list-style-type: none;
     padding: 0;
     margin-top: 0;
     padding-top: 0;
@@ -328,7 +318,7 @@ section {
 
 /* Estilo de cada card de produto */
 .product-card {
-    background-color: #FFF7F0; /* Fundo claro e acolhedor */
+    background-color: #FFF7F0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -346,21 +336,21 @@ section {
 
 /* Título do produto */
 .product-title {
-    color: #3E6259; /* Verde menta */
+    color: #3E6259;
     font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
 /* Preço do produto */
 .product-price {
-    color: #6B4F4F; /* Marrom suave */
+    color: #6B4F4F;
     font-size: 1.1rem;
     margin-right: 15px;
 }
 
 /* Botão de Adicionar ao Carrinho */
 .add-to-cart {
-    background-color: #A5C9CA; /* Verde claro suave */
+    background-color: #A5C9CA;
     color: #FFFFFF;
     padding: 10px 15px;
     border: none;
@@ -371,13 +361,13 @@ section {
 }
 
 .add-to-cart:hover {
-    background-color: #7CA7A9; /* Efeito hover no botão */
+    background-color: #7CA7A9;
 }
 
 /* Efeito Hover nos cards */
 .product-card:hover {
-    transform: translateY(-10px); /* Animação de levantar o card */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /*estilo para section de produtos*/
@@ -408,7 +398,7 @@ section {
     width: 48%;
     border: 2px solid;
     height: 0;
-    
+
 }
 
 #products_list ul {
@@ -469,15 +459,19 @@ section {
     color: #f8a900;
     margin-right: 10px;
 }
-/* Estilos para a seção de comentários */
+
+/*Configuracoes produtos*/
+
+
+/*Configuracoes de comentarios*/
 #review_section {
     padding: 40px 55px;
     text-align: center;
     overflow-x: hidden;
-    
+
 }
 
-#review_section h1::before{
+#review_section h1::before {
     content: "";
     border: 0.2rem solid;
     width: 48%;
@@ -485,25 +479,26 @@ section {
     background-color: #3E6259;
 }
 
-/* Título da seção */
+
 #review_section h1 {
     display: flex;
     align-items: center;
-    color: #3E6259; /* Verde menta */
+    color: #3E6259;
     font-size: 2rem;
     margin-bottom: 2.5rem;
     gap: 1rem;
 }
-#review_section h1::after{
+
+#review_section h1::after {
     content: "";
     border: 0.2rem solid;
     width: 48%;
     height: 0.2rem;
     background-color: #3E6259;
-    
+
 }
 
-/* Container dos cards de avaliação */
+
 #cards_review_container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -511,7 +506,7 @@ section {
     justify-content: center;
 }
 
-/* Estilo de cada card de avaliação */
+
 .review-card {
     background-color: #FFE8D6;
     padding: 20px;
@@ -533,39 +528,42 @@ section {
     object-fit: cover;
 }
 
-/* Comentário do cliente */
+
 .client-comment {
     font-size: 1rem;
-    color: #6B4F4F; /* Marrom suave */
+    color: #6B4F4F;
     margin-bottom: 15px;
 }
 
-/* Avaliação (estrelas) */
+
 .client-rating {
     font-size: 1.2rem;
-    color: #FFD700; /* Cor dourada para as estrelas */
+    color: #FFD700;
 }
 
-/* Estrela (ícone de estrela preenchida) */
+
 .star {
     margin: 0 2px;
 }
 
-/* Efeito Hover nos cards */
+
 .review-card:hover {
-    transform: translateY(-10px); /* Animação de levantar o card */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/*estilos para seção criativa*/
+
+/*Configuracoes de comentarios*/
+
+/*Configuracoes espaco criativo*/
 #creative-space {
     text-align: center;
     padding: 20px 55px;
     border-radius: 8px;
-    
-  }
-  
-  #creative-space h1::before{
+
+}
+
+#creative-space h1::before {
     content: "";
     border: 0.2rem solid;
     width: 48%;
@@ -576,39 +574,41 @@ section {
 #creative-space h1 {
     display: flex;
     align-items: center;
-    color: #3E6259; 
+    color: #3E6259;
     font-size: 2rem;
     margin-bottom: 2.5rem;
     gap: 1rem;
 }
-#creative-space h1::after{
+
+#creative-space h1::after {
     content: "";
     border: 0.2rem solid;
     width: 48%;
     height: 0.2rem;
     background-color: #3E6259;
-    
+
 }
-  .content {
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  #banner-image {
+}
+
+#banner-image {
     width: 100%;
     border-radius: 8px;
-  }
-  
-  #audio-player {
+}
+
+#audio-player {
     width: 100%;
     margin-top: 10px;
     outline: none;
-  }
+}
 
 
 /* Estilos para a seção de contato */
-#creative-space h1::before{
+#creative-space h1::before {
     content: "";
     border: 0.2rem solid;
     width: 48%;
@@ -619,21 +619,27 @@ section {
 #creative-space h1 {
     display: flex;
     align-items: center;
-    color: #3E6259; /* Verde menta */
+    color: #3E6259;
     font-size: 2rem;
     margin-bottom: 2.5rem;
     gap: 1rem;
 }
-#creative-space h1::after{
+
+#creative-space h1::after {
     content: "";
     border: 0.2rem solid;
     width: 48%;
     height: 0.2rem;
     background-color: #3E6259;
-    
+
 }
+
+/*Configuracoes espaco criativo*/
+
+
+/*Configuracoes secao de contato*/
 #contact {
-    background-color: #FFE8D6; /* Cor suave de fundo para a seção */
+    background-color: #FFE8D6;
     padding: 40px 20px;
     display: flex;
     justify-content: center;
@@ -672,7 +678,7 @@ section {
 }
 
 .form-header h2 {
-    color: #3E6259; /* Cor verde menta para o título */
+    color: #3E6259;
     font-size: 1.8rem;
     margin-top: 10px;
 }
@@ -685,7 +691,7 @@ section {
 
 .informations label {
     font-size: 1rem;
-    color: #6B4F4F; /* Cor marrom suave */
+    color: #6B4F4F;
     margin-bottom: 5px;
     display: block;
 }
@@ -703,7 +709,7 @@ section {
 
 .informations input:focus,
 .informations textarea:focus {
-    border-color: #A5C9CA; /* Verde claro para foco */
+    border-color: #A5C9CA;
     outline: none;
 }
 
@@ -716,7 +722,7 @@ section {
 }
 
 .submit-btn {
-    background-color: #A5C9CA; /* Cor suave de verde para o botão */
+    background-color: #A5C9CA;
     color: #FFF;
     padding: 12px 20px;
     font-size: 1.2rem;
@@ -727,7 +733,7 @@ section {
 }
 
 .submit-btn:hover {
-    background-color: #88B8BB; /* Efeito de hover para o botão */
+    background-color: #88B8BB;
 }
 
 .submit-btn:focus {
@@ -735,10 +741,13 @@ section {
 }
 
 
+/*Configuracoes secao de contato*/
 
-/* Estilos para o footer */
+
+
+/*Configuracoes footer*/
 footer {
-    background-color: #3E6259; /* Cor de fundo para o rodapé */
+    background-color: #3E6259;
     padding: 40px 20px;
     text-align: center;
 }
@@ -767,7 +776,7 @@ footer {
 }
 
 .footer-logo h3 {
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -803,8 +812,5 @@ footer {
 }
 
 .social-links a:hover {
-    color: #A5C9CA; /* Cor de destaque no hover */
+    color: #A5C9CA;
 }
-
-
-
