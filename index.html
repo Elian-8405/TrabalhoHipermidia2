@@ -1,244 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="generalstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="code.js"></script> 
+    <title>Cantinho do Artesanato</title>
 </head>
-
 <body>
-    <header class="header-content">
-        <div id="header_logo">
-            <img src=".\img\logo.jpg" alt="Adiconar Descricao">
+    <header id="header_content">
+        <div class="logo_container">
+            <img src=".\img\cantinho_do_artesanato_logo.png" alt="">
+            <h2>Cantinho do Artesanato</h2>
         </div>
-        <nav class="header-nav">
+        <nav class="nav_container">
             <ul>
-                <li> <a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Feedback</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#aboutus">Sobre</a></li>
+                <li><a href="#products-container">Produtos</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
+       
     </header>
-    <main class="main-container">
-        <section id="main_impact_section">
-            <div id="impact_slogan">
+    
+    <main>
+        <section id="impact_section">
+            <div id="slogan_container">
                 <h1>
-                    Cantinho do Artesanato – Onde a imaginação ganha forma e a arte encontra você!
+                    <span>Cantinho do Artesanato</span><br>Onde a imaginação ganha forma e a arte encontra você!
                 </h1>
                 <p>No Cantinho do Artesanato, transformamos ideias em arte e artesanato únicos. Com criatividade e
                     paixão, criamos peças exclusivas que contam histórias.</p>
-                <button>Avaliações</button>
+                <button  id="goToReviews">Avaliações</button>
             </div>
-            <div id="impact-product-content">
-                <div id="product">
-                    <img src=".\img\produto.png" alt="Adicionar Descricao">
-                    <h1>Bolsa</h1>
-                    <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                    <div id="price-avaliation">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h5>(4.0)</h5>
+            <div id="impact_product">
+                <img src=".\img\produtoimpacto.png" alt="Produto Artesanal" class="product-image">
+                
+                <h2 class="product-title">Produto Artesanal Exclusivo</h2>
+                
+                <p class="product-description">Este produto artesanal foi cuidadosamente criado com materiais de alta qualidade, ideal para decorar seu espaço com estilo único.</p>
+                
+                <div class="product-footer">
+                  <span class="product-price">R$ 89,90</span>
+                  <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+            </div>             
+        </section>
+        <section id="aboutus">
+            <h1>Sobre nós</h1>
+            <div class="slide-container">
+                <div class="slides">
+                    <!-- Slide 1 -->
+                    <div class="slide" id="slide_historia">
+                        <img src="img/slide_historia.png" alt="História">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide" id="slide_valores">
+                        <img src="img/slide_valores.png" alt="Valores">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide" id="slide_missao">
+                        <img src="img/slide_missao.png" alt="Missão">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="slide" id="slide_visao">
+                        <img src="img/slide_visao.png" alt="Visão">
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div class="buttons">
+                    <button class="button" id="prevBtn">&#10094;</button>
+                    <button class="button" id="nextBtn">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products-container">
+            <h1 id="title-product">Produtos</h1>
+            <div id="products_list">
+                <ul>
+                    <li>
+                        <div class="product-item">
+                            <img src=".\img\oxum-escultura-palha-1024-1024-480x480.jpg.webp" alt="Escultura feita artesanalmente com palha de milho crioulo">
+                            <h3>Escultura em palha de milho</h3>
+                            <i class="fa-solid fa-brazilian-real-sign"> 360,00</i>
+                            <div class="price-avaliation">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5>(4.0)</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <img src=".\img\moringa-de-ceramica-1024-1024-480x480.jpg.webp" alt="Moringa de Cerâmica Jequitinhonha com Bolinhas">
+                            <h3>Moringa de Cerâmica Jequitinhonha com Bolinhas</h3>
+                            <i class="fa-solid fa-brazilian-real-sign"> 290,00</i>
+                            <div class="price-avaliation">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5>(4.0)</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <img src=".\img\urutu_cachepo-de-palha-cesto-indigena-1024-1024-480x480.jpg.webp" alt="Cesto Indígena em Palha de Urutu">
+                            <h3>Cesto Indígena em Palha de Urutu</h3>
+                            <i class="fa-solid fa-brazilian-real-sign"> 150,00</i>
+                            <div class="price-avaliation">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                                <h5>(3.5)</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <img src=".\img\banquinho_tamandua2-480x480.jpg.webp" alt="Bancinho Tamanduá">
+                            <h3>Banquinho Tamanduá</h3>
+                            <i class="fa-solid fa-brazilian-real-sign"> 200,00</i>
+                            <div class="price-avaliation">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                                <h5>(3.5)</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <img src=".\img\banco_arara_pintura-480x480.webp" alt="Banco Arara Pintura">
+                            <h3>Banco Arara Pintura</h3>
+                            <i class="fa-solid fa-brazilian-real-sign"> 250,00</i>
+                            <div class="price-avaliation">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5>(4.0)</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <img src=".\img\banquinho_macaco_p-480x480.webp" alt="Bancinho Macaco">
+                            <h3>Banquinho Macaco</h3>
+                            <i class="fa-solid fa-brazilian-real-sign"> 220,00</i>
+                            <div class="price-avaliation">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5>(4.0)</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <img src=".\img\cabeca_mulher_m-480x480.webp" alt="Cabeça Mulher Artesanal">
+                            <h3>Cabeça Mulher Artesanal</h3>
+                            <i class="fa-solid fa-brazilian-real-sign"> 280,00</i>
+                            <div class="price-avaliation">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h5>(4.0)</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <img src=".\img\flor-de-parede-jequitinhonha-ceramica1-480x480.webp" alt="Flor de Parede Jequitinhonha">
+                            <h3>Flor de Parede Jequitinhonha</h3>
+                            <i class="fa-solid fa-brazilian-real-sign"> 180,00</i>
+                            <div class="price-avaliation">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                                <h5>(3.5)</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <img src=".\img\nossa_senhora_religiosa_escultura_arte_palha_milho-480x480.webp" alt="Escultura Nossa Senhora Religiosa">
+                            <h3>Escultura Nossa Senhora Religiosa</h3>
+                            <i class="fa-solid fa-brazilian-real-sign"> 220,00</i>
+                            <div class="price-avaliation">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                                <h5>(3.5)</h5>
+                            </div>
+                        </div>
+                        <li>
+                            <div class="product-item">
+                                <img src=".\img\jarro.png" alt="Escultura Nossa Senhora Religiosa">
+                                <h3>Jarro Incrivel feito a mão</h3>
+                                <i class="fa-solid fa-brazilian-real-sign"> 220,00</i>
+                                <div class="price-avaliation">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                    <h5>(3.5)</h5>
+                                </div>
+                            </div>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="creative-space">
+            <h1>Podcast Cantinho do Artesanato</h1>
+            <div class="content">
+              <img src="img/banner_podcast.png" alt="Podcast Banner" id="banner-image">
+              <audio controls id="audio-player">
+                <source src="audio/podcast.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+        </section>
+
+        <section id="review_section">
+            <h1>O que nossos clientes dizem</h1>
+            <div id="cards_review_container">
+                <!-- Card de Comentário 1 -->
+                <div class="review-card">
+                    <img src=".\img\user1.jpg" alt="Cliente 3" class="client-photo">
+                    <div class="review-content">
+                        <p class="client-comment">"Fiquei encantada com o atendimento e a qualidade dos produtos. Recomendo para todos!"</p>
+                        <div class="client-rating">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card de Comentário 2 -->
+                <div class="review-card">
+                    <img src=".\img\user2.jpg" alt="Cliente 3" class="client-photo">
+                    <div class="review-content">
+                        <p class="client-comment">"Fiquei encantada com o atendimento e a qualidade dos produtos. Recomendo para todos!"</p>
+                        <div class="client-rating">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card de Comentário 3 -->
+                <div class="review-card">
+                    <img src=".\img\user3.jpg" alt="Cliente 3" class="client-photo">
+                    <div class="review-content">
+                        <p class="client-comment">"Fiquei encantada com o atendimento e a qualidade dos produtos. Recomendo para todos!"</p>
+                        <div class="client-rating">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src=".\img\user4.jpg" alt="Cliente 3" class="client-photo">
+                    <div class="review-content">
+                        <p class="client-comment">"Fiquei encantada com o atendimento e a qualidade dos produtos. Recomendo para todos!"</p>
+                        <div class="client-rating">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src=".\img\user5.jpg" alt="Cliente 3" class="client-photo">
+                    <div class="review-content">
+                        <p class="client-comment">"Fiquei encantada com o atendimento e a qualidade dos produtos. Recomendo para todos!"</p>
+                        <div class="client-rating">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="main_aboutus-section">
-            <h1>Sobre Nós</h1>
-            <div class="aboutus">
-                <p>Fundado com paixão pela arte e pelo artesanato, o Ateliê [Nome do Ateliê] nasceu para transformar
-                    criatividade em peças únicas. Desde [ano de fundação], unimos tradição e inovação para criar
-                    trabalhos feitos à mão com atenção aos mínimos detalhes. Cada peça conta uma história e carrega o
-                    propósito de levar beleza, cultura e funcionalidade para o seu dia a dia. Seja para decorar,
-                    presentear ou aprender, nosso ateliê é um espaço onde a imaginação ganha vida e a arte se encontra
-                    com o coração</p>
-            </div>
-            <div class="msv-content">
-                <div class="msv-itens">
-                    <h3>
-                        Missão
-                    </h3>
-                    <h5>Texto Missão</h5>
+        <section id="contact">
+            <h1 id="title-contact">Fale conosco</h1>
+            <form action="" method="POST">
+                <div class="form-header">
+                    <h2>Cantinho do Artesanato</h2>
+                    <img src=".\img\logo.png" alt="Logo Cantinho do Artesanato" class="logo">
                 </div>
-                <div class="msv-itens">
-                    <h3>
-                        Visão
-                    </h3>
-                    <h5>Texto Visão</h5>
+                <div class="informations">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome completo">
                 </div>
-                <div class="msv-itens">
-                    <h3>
-                        Valores
-                    </h3>
-                    <h5>Texto Valores</h5>
+                <div class="informations">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail">
                 </div>
-            </div>
+                <div class="informations">
+                    <label for="message">Escreva sua mensagem</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Escreva sua mensagem aqui"></textarea>
+                </div>
+                <div class="form-footer">
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </div>
+            </form>
         </section>
-        <section class="products-container">
-            <h1 id="title-product">Produtos</h1>
-            <div id="products_list">
-                <ul>
-
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-                    <li>
-                        <div id="product_list">
-                            <img src=".\img\produto.png" alt="Adicionar Descricao">
-                            <h1>Bolsa</h1>
-                            <i class="fa-solid fa-brazilian-real-sign"> 00,00</i>
-                            <div id="price-avaliation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <h5>(4.0)</h5>
-                            </div>
-                    </li>
-
-                </ul>
-            </div>
-        </section>
-        
     </main>
-
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src=".\img\logo.png" alt="Logo Cantinho do Artesanato" class="logo">
+                <h3>Cantinho do Artesanato</h3>
+            </div>
+            <span class="footer-address">
+                Cantinho do Artesanato <br>
+                Rua das Flores, 123 - Centro <br>
+                São Luís - MA, 65000-000, Brasil
+            </span>
+            <ul class="social-links">
+                <li><a href="" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="code.js"></script>
 </body>
-
 </html>
